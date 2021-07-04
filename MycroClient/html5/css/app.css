@@ -1,0 +1,26 @@
+.icon-bar {
+    width: 100%; /* Set a specific width */
+    background-color: #01168a; /* Dark-blue background */
+}
+
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+    border-bottom: solid 1px #000;
+}
+
+.icon-bar a .text{
+    font-size: 12px;
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+   
+}
