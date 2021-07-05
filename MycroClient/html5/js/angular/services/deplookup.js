@@ -1,6 +1,6 @@
 app.service('deplookup', ['$http', function ($http) {
     this.register = function (appId) {
-        return $http.get('https://localhost:5001/' + 'products' + '.html').then(function (res) {
+        return $http.get('https://localhost:5001/' + '/appId/' + 'config.json').then(function (res) {
             res = {
                 data: {
                     componentList: [{ appMatch: 'productsList' }]
