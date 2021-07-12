@@ -1,11 +1,10 @@
 app.service('deplookup', ['$http', function ($http) {
     this.register = function (appId) {
-        return $http.get('https://localhost:5001/' + '/appId/' + 'config.json').then(function (res) {
-            res = {
-                data: {
-                    componentList: [{ appMatch: 'productsList' }]
-                }
+        return $http.get('https://localhost:5001/' + appId + '.json').then(function (res) {
+            $.getJSON('apps.json', function (json) {
+                $scope.appMatch = appId;
             };
+
             let dependencies = [];
             let components = [];
             for (let i in res.data.componentList) {
