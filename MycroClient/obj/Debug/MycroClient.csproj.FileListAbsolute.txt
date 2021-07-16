@@ -52,8 +52,8 @@ E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\Mycro
 E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\bin\roslyn\VBCSCompiler.exe.config
 E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\obj\Debug\MycroClient.csprojAssemblyReference.cache
 E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\obj\Debug\MycroClient.csproj.CoreCompileInputs.cache
 E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\obj\Debug\MycroClient.csproj.CopyComplete
 E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\obj\Debug\RambasePOCClient.dll
 E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\obj\Debug\RambasePOCClient.pdb
+E:\OneDrive - 99X Technology\Documents\99x\first-assignment\mycro-frontend\MycroClient\obj\Debug\MycroClient.csproj.AssemblyReference.cache

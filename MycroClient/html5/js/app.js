@@ -31,7 +31,7 @@ app.config(['$routeProvider', '$sceDelegateProvider' ,'$compileProvider' , '$con
 
                 load: function (applookup, deplookup, $q, $rootScope, $route) {
                     console.log($route.current.params.appId);
-                    let promi = deplookup.register();
+                    let promi = deplookup.register($route.current.params.appId);
                     let defer = $q.defer();
 
                     promi.then(function(r){
