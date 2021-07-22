@@ -81,8 +81,8 @@
     <Content Include="html5\css\bootstrap.css" />
     <Content Include="html5\css\bootstrap.min.css" />
     <Content Include="html5\index.html" />
-    <Content Include="html5\js\angular\services\applookup.js" />
-    <Content Include="html5\js\angular\services\deplookup.js" />
+    <Content Include="html5\js\angular\services\appLoader.js" />
+    <Content Include="html5\js\angular\services\dependencyLoader.js" />
     <Content Include="html5\js\app.js" />
     <Content Include="html5\js\bootstrap.bundle.js" />
     <Content Include="html5\js\bootstrap.bundle.min.js" />

@@ -29,14 +29,12 @@ app.config(['$routeProvider', '$sceDelegateProvider' ,'$compileProvider' , '$con
             controller : 'appController',
             resolve : {
 
-                load: function (applookup, deplookup, $q, $rootScope, $route) {
-                    console.log($route.current.params.appId);
-                    let promi = deplookup.register($route.current.params.appId);
+                load: function (dependancyLoader, $q, $route) {
+                    let promise = dependancyLoader.register($route.current.params.appId);
                     let defer = $q.defer();
 
-                    promi.then(function(r){
-                        require(r.dependencies, function() {
-                            applookup.register(r.components,defer);
+                    promise.then(function(routeFunction){
+                        require(routeFunction.dependencies, function() {
                         });
                     });
                     return defer.promise;
@@ -65,7 +63,7 @@ app.controller('appController', ['$scope', function($scope) {
     $scope.a = 10;
 }]);
 
-app.controller('mainController', ['$scope', '$location', 'deplookup', function($scope, $location) {
+app.controller('mainController', ['$scope', '$location', 'dependencyLoader', function($scope, $location) {
 
     $scope.loadApp = function($event) {
         let appName = $event.target.value;

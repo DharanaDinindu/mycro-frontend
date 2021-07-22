@@ -1,8 +1,9 @@
-app.service('applookup', function() {
+app.service('appLoader', function() {
     this.register = function(components,defer) {
 
         let dependencies = [];
 
+        //registering the app components  
         for(let i in components){
             let component = components[i];
             app.register.component(component.appMatch, {

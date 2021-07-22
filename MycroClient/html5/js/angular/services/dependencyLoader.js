@@ -1,7 +1,8 @@
-app.service('deplookup', ['$http', function ($http) {
+app.service('dependencyLoader', ['$http', function ($http) {
+
+    //getting the components using the appId from the each json file
     this.register = function (appId) {
         return $http.get('https://localhost:5001/' + appId + '.json').then(function (res) {
-            ;
 
             let dependencies = [];
             let components = [];
