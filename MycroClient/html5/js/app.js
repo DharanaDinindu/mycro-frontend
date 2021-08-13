@@ -1,5 +1,5 @@
 let app = angular.module('app', ['ngRoute']);
-let apps = ['products', 'mydash'];
+let apps = ['products', 'mydash', 'mycart' ];
 
 app.config(['$routeProvider', '$sceDelegateProvider' ,'$compileProvider' , '$controllerProvider',  function($routeProvider, $sceDelegateProvider, $compileProvider, $controllerProvider) {
 

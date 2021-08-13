@@ -1,4 +1,6 @@
-app.service('appLoader', function() {
+const baseUrl = 'https://localhost:5001/';
+
+app.service('appLoader', function () {
     this.register = function(components,defer) {
 
         let dependencies = [];
@@ -7,7 +9,7 @@ app.service('appLoader', function() {
         for(let i in components){
             let component = components[i];
             app.register.component(component.appMatch, {
-                templateUrl: 'https://localhost:5001/' + component.appMatch + '/Views/' + component.appMatch + '.html',
+                templateUrl: baseUrl + component.appMatch + '/Views/' + component.appMatch + '.html',
                 controller : component.appMatch + 'Controller'
                 
             });
